@@ -1,0 +1,73 @@
+html, body {
+    font-family: 'muli', sans-serif;
+	font-weight: 400;
+	background-color: black;
+	color: white;
+}
+.clock {
+	font-size: 75px;
+	font-family: muli, sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+.date {
+	font-size: 30px;
+	text-align: center;
+}
+#date {
+	border-bottom: 1px solid #ddd;
+}
+.year {
+	font-size: 20px;
+	text-align: center;
+}
+.block {
+	padding-left: 15px;
+	border-left: 1px solid #ccc;
+	height: auto !important;
+}
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+ul, a {
+	color: white;
+}
+ul, a:hover {
+	text-decoration-line: none;
+	color: white;
+}
+blockquote {
+	padding-top: 50px;
+	font-style: italic;
+	margin: 0;
+	font-size: 17px; 
+}
+#writer {
+	padding-top: 10px;
+	margin-left: 20px;
+}
+li {
+	padding-left: 0px; 
+	transition: padding 0.2s ease;
+
+}
+li:hover {
+	padding-left: 10px;
+	transition: padding 0.2s ease;
+}
+#weather {
+	padding: 20px;	
+	font-size: 23px;
+	text-align: center;
+}
+h1 {
+	margin-bottom: 12px;
+	font-weight: 800;
+}
+.category{
+	color: white;
+}
+#temp {
+	font-size: 32px;
+}
