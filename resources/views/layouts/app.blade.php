@@ -29,20 +29,29 @@
 <body onload="startTime()">
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark bg-trans">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         @guest
                         @else
-                        <a class="nav-link">
-                            <button class="btn btn-sm align-middle btn-outline-warning" data-toggle="modal" data-target="#Remove">Remove</button>
-                        </a>
-                        <a class="nav-link">
-                            <button class="btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#addBookmark">Add</button>
-                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <button class="btn btn-sm align-middle btn-outline-warning" data-toggle="modal" data-target="#Remove">Remove</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <button class="btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#addBookmark">Add</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 <button class="btn btn-sm align-middle btn-outline-danger" type="button">Logout</button>
                             </a>
+                        </li>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 {{ csrf_field() }}
                             </form>

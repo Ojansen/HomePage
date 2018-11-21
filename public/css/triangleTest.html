@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testf</title>
+<style type="text/css">
+	html body {
+		padding: 0;
+		margin: 0;
+	}
+	.template {
+		width: 100%;
+		height: 400px;
+	}
+	.triangle-up {
+		width: 0;
+		height: 0;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		border-bottom: 50px solid #555;
+	}
+</style>
+<script
+ src="https://code.jquery.com/jquery-3.3.1.js"
+ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$("<div>").each(function () {
+		$(".triangle-up").html()
+	}).append($(".template"));
+</script>
+</head>
+<body>
+
+<div class="template">
+	<div class="triangle-up"></div>
+</div>
+
+</body>
+</html>
